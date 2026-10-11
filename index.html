@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlgoVision AI Solutions | Next-Gen Data Science</title>
+    <style>
+        :root {
+            --bg-color: #0b0f17;
+            --card-bg: #121824;
+            --text-color: #c9d1d9;
+            --accent-color: #58a6ff;
+            --neon-blue: #00f0ff;
+            --neon-magenta: #ff007f;
+            --neon-green: #39ff14;
+            --neon-purple: #b026ff;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #161f30, #0b0f17);
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 2px solid var(--accent-color);
+        }
+
+        .logo-text {
+            font-size: 3rem;
+            font-weight: 800;
+            letter-spacing: 2px;
+            color: #ffffff;
+            margin: 0;
+            text-shadow: 0 0 15px var(--neon-blue);
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            color: var(--accent-color);
+            margin-top: 15px;
+            font-weight: 400;
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: #238636;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #ffffff;
+            font-size: 2rem;
+            margin-bottom: 40px;
+            border-bottom: 1px solid #21262d;
+            padding-bottom: 10px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 2px solid #21262d;
+            border-radius: 12px;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        /* इंडिविजुअल बॉक्स की नियॉन चमक और स्टाइल */
+        .card.dpp:hover {
+            transform: translateY(-8px);
+            border-color: var(--neon-blue);
+            box-shadow: 0 0 20px rgba(0, 240, 255, 0.4);
+        }
+        .card.dpp h3 { text-shadow: 0 0 8px var(--neon-blue); color: var(--neon-blue); }
+
+        .card.dvs:hover {
+            transform: translateY(-8px);
+            border-color: var(--neon-magenta);
+            box-shadow: 0 0 20px rgba(255, 0, 127, 0.4);
+        }
+        .card.dvs h3 { text-shadow: 0 0 8px var(--neon-magenta); color: var(--neon-magenta); }
+
+        .card.fe:hover {
+            transform: translateY(-8px);
+            border-color: var(--neon-green);
+            box-shadow: 0 0 20px rgba(57, 255, 20, 0.4);
+        }
+        .card.fe h3 { text-shadow: 0 0 8px var(--neon-green); color: var(--neon-green); }
+
+        .card.smi:hover {
+            transform: translateY(-8px);
+            border-color: var(--neon-purple);
+            box-shadow: 0 0 20px rgba(176, 38, 255, 0.4);
+        }
+        .card.smi h3 { text-shadow: 0 0 8px var(--neon-purple); color: var(--neon-purple); }
+
+        .card h3 {
+            margin-top: 0;
+            font-size: 1.8rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            transition: all 0.3s;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            color: #8b949e;
+        }
+
+        .btn-container {
+            text-align: center;
+            margin: 60px 0;
+        }
+
+        .btn {
+            background: linear-gradient(90deg, #1f6feb, #00f0ff);
+            color: white;
+            padding: 15px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            box-shadow: 0 4px 15px rgba(0, 240, 255, 0.3);
+            transition: all 0.3s;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(0, 240, 255, 0.5);
+        }
+
+        footer {
+            background-color: #0b0f17;
+            text-align: center;
+            padding: 40px 20px;
+            font-size: 0.9rem;
+            border-top: 1px solid #21262d;
+            color: #8b949e;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-text">ALGOVISION AI SOLUTIONS</div>
+        <div class="tagline">Bridging BITS Pilani Academic Excellence with Industry-Grade AI Solutions</div>
+        <div class="badge">Govt. Registered MSME: UDYAM-RJ-49-0019618</div>
+    </header>
+
+    <div class="container">
+        <h2>Our Core AI Expertise</h2>
+        <div class="grid">
+            <div class="card dpp">
+                <h3>DPP</h3>
+                <p>Advanced Data Preprocessing & Unstructured LLM Data Pipelines.</p>
+            </div>
+            <div class="card dvs">
+                <h3>DVS</h3>
+                <p>Data Visualization, Storytelling & Real-time Power BI Dashboards.</p>
+            </div>
+            <div class="card fe">
+                <h3>FE</h3>
+                <p>High-Dimensional Feature Engineering & Predictive Vector Embeddings.</p>
+            </div>
+            <div class="card smi">
+                <h3>SMI</h3>
+                <p>Rigorous Statistical Models & Mathematical Inference for AI Validation.</p>
+            </div>
+        </div>
+
+        <div class="btn-container">
+            <a href="https://github.com" target="_blank" class="btn">🚀 View Our Live Labs on GitHub</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 ALGOVISION AI SOLUTIONS. All Rights Reserved.</p>
+        <p>Official Address: Neemrana, Kotputli-Behror, Rajasthan | Contact: Neerajgheloth52@gmail.com</p>
+    </footer>
+
+</body>
+</html>
